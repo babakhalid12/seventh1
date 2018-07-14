@@ -1,0 +1,47 @@
+
+<div style="text-align: center">
+  <marquee><h1>Assignment 7 . 1</h1></marquee>
+<br>
+<h2>Login Form</h2>
+<form class="example-form" >
+  
+  <div>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Username" #name value="">
+    <mat-hint>Username</mat-hint>
+  </mat-form-field>
+  </div>
+  <br>
+  <div>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="password"  type="password" #pass value="">
+    <mat-hint>Password</mat-hint>
+    </mat-form-field>
+  </div>
+<br>
+
+<div >
+
+  <mat-chip-list>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+       
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      
+      
+      <mat-chip color="primary" selected (click)="fun(name.value,pass.value)">Submit</mat-chip>
+       
+      </mat-chip-list>
+   
+    </div>
+
+
+</form>
+</div>
+
+<h1> {{data + " " + username }}</h1>
+
+
